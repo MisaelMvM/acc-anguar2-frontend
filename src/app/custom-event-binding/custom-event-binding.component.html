@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-12 text-center"><h1><span class="name">{{ name | uppercase }}</span></h1></div>
+    <hr>
+    <label class="col-md-12 text-center"><h2>{{ data }}</h2></label>
+    <hr>
+    <div class="row">
+      <button (click)="fireYellEvent($event)" class="btn btn-primary btn-lg col-md-6 col-md-offset-3">Click Me</button>
+      <label class="col-md-12 text-center"><h2>This Button will send a Event to another component thru Custom-Event-Binding</h2></label>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+	.name{
+		border: 2px solid black;
+		padding: 10px;
+		background: lightgray;
+	}
+</style>

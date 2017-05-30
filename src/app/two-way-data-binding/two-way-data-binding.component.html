@@ -1,0 +1,59 @@
+<div id="mainBox" [ngClass]="bindedProperty2">
+<div class="jumbotron">
+  <div class="row">
+    <label class="col-md-12 text-center"><h3>Nice to meet you <small class="text-muted">{{ bindedProperty1 }}</small></h3></label>
+    <input [(ngModel)]="bindedProperty1" class="col-md-8 col-md-offset-2 text-center">
+  </div>
+  <br>
+  <div class="row">
+    <label class="col-md-12 text-center"><h3>Let's change this <small class="text-muted">{{ bindedProperty2 | uppercase }}</small> background-color!</h3></label>
+    <input [(ngModel)]="bindedProperty2" class="col-md-8 col-md-offset-2 text-center">
+  </div>
+</div>
+
+<div class="container">
+	<img src="assets/two-way-data-binding1.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
+	<img src="assets/two-way-data-binding2.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
+</div>
+</div>
+
+<style type="text/css">
+  #mainBox{
+  	height: 100%;
+  	width: 100%;
+  }
+	.blue{
+		background: blue;
+	}
+	.black{
+		background: black;
+	}
+	.red{
+		background: red;
+	}
+	.yellow{
+		background: yellow;
+	}
+	.white{
+		background: white;
+	}
+	.green{
+		background: green;
+	}
+	.gray{
+		background: gray;
+	}
+	.orange{
+		background: orange;
+	}
+	.pink{
+		background: pink;
+	}
+	.purple{
+		background: purple;
+	}
+	.brown{
+		background: brown;
+	}
+</style>
+

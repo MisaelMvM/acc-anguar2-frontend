@@ -1,0 +1,23 @@
+<div class="jumbotron" [ngClass]="{'blue': toggle, 'green': !toggle}">
+  <div class="row">
+    <label class="col-md-12 text-center"><h3>Let's change the name <small class="text-muted">{{ name | uppercase }}</small> in the other component!</h3></label>
+    <input [(ngModel)]="name" class="col-md-8 col-md-offset-2 text-center">
+  </div>
+</div>
+
+<div class="jumbotron">
+  <app-custom-event-binding [data]="data" [name]="name" (onYell)="yell($event)"></app-custom-event-binding>
+</div>
+
+<div class="container row">
+	<img src="assets/custom-property-binding.png" class="img-responsive img-thumbnail col-md-offset-3" alt="Responsive image">
+</div>
+
+<style type="text/css">
+	.blue{
+		background: lightblue;
+	}
+	.green{
+		background: lightgreen;
+	}
+</style>

@@ -1,0 +1,12 @@
+  <div class="jumbotron">
+  <div class="row">
+    <label class="col-md-12 text-center"><h2>Enter a name to be sent into another component using Route-Param</h2></label>
+  </div>
+  <div class="row">
+    <input [(ngModel)]="name" class="col-md-8 col-md-offset-2 text-center">
+  </div>
+  <br>
+  <div class="row">
+    <a href="routing/{{name}}" class="btn btn-success btn-lg col-md-6 col-md-offset-3">Send</a>
+  </div>
+</div>

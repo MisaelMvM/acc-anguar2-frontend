@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" [routerLink]="['']">ACC FrontEnd</a>
+
+    </div>
+
+    <a class="nav navbar-nav navbar-brand" style="margin-left: 35%; color:blue;" [routerLink]="['']">ANGULAR 2</a>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a [routerLink]="['directives']">Directives<span class="sr-only">(current)</span></a></li>
+
+        <li><a [routerLink]="['route']">Routing<span class="sr-only">(current)</span></a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Binding<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['stringinterpolation']">String Interpolation</a></li>
+            <li><a [routerLink]="['propertybinding']">Property Binding</a></li>
+            <li><a [routerLink]="['eventbinding']">Event Binding</a></li>
+            <li><a [routerLink]="['twowaydatabinding']">Two-way Data Binding</a></li>
+            <li><a [routerLink]="['custompropertybinding']">Custom Property Binding</a></li>
+            <li><a [routerLink]="['customeventbinding']">Custom Event Binding</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a [routerLink]="['databinding']">All</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="main">
+    <router-outlet></router-outlet>
+</div>
